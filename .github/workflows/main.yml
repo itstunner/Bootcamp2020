@@ -28,5 +28,6 @@ jobs:
         node-version: 14.4.0 
     - name: Install Surge
       run: npm install -g surge
+      
     - name: Run Surge
-      run: surge ./ Freelance-Track.surge.sh --token {{Secret.FREELANCE}}
+      run: surge ./ FreelanceTrack.surge.sh --token ${{secrets.FREELANCE}}
